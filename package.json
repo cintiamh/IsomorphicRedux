@@ -1,0 +1,47 @@
+{
+  "name": "isomorphicredux",
+  "version": "0.0.1",
+  "description": "Setting up an isomorphic project with React and Redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
+    "dev": "npm run start & webpack-dev-server --progress --color",
+    "build": "NODE_ENV=production webpack --progress --color -p --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cintiamh/IsomorphicRedux.git"
+  },
+  "keywords": [
+    "Isomorphic",
+    "redux"
+  ],
+  "author": "Cintia Higashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cintiamh/IsomorphicRedux/issues"
+  },
+  "homepage": "https://github.com/cintiamh/IsomorphicRedux#readme",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "express": "^4.14.0",
+    "history": "^4.3.0",
+    "immutable": "^3.8.1",
+    "object-assign": "^4.1.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^7.0.0",
+    "babel-loader": "^6.2.5",
+    "eslint": "^3.7.1",
+    "eslint-plugin-react": "^6.3.0",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
